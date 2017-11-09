@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Users</title>
+</head>
+<body>
+  <h1>List of Users</h1>
+  {{#each users}}
+    <li>
+      <button><a href="/updateuser/{{this.id}}">UPDATE</a></button> <button><a href="/deleteuser/{{this.id}}">Delete User</a></button> |
+      {{this.firstname}} {{this.lastname}}
+    </li>
+  {{/each}}
+</body>
+</html>
